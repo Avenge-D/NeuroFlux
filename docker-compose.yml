@@ -1,0 +1,20 @@
+services:
+  ai_media_os:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai_media_os_daemon
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=development
+    volumes:
+      - .:/app
+      - ./assets:/app/assets
+      - ./data:/app/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "3"

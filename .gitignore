@@ -1,0 +1,87 @@
+# ── Secrets ────────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.pyo
+*.pyd
+
+# ── Virtual Environments ────────────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+.env.bak
+
+# ── Testing & Coverage ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ── Type Checking ──────────────────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+.pyright/
+
+# ── IDEs ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Database ───────────────────────────────────────────────────────────────────
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# ── Generated Media & Assets ───────────────────────────────────────────────────
+assets/raw/*.mp4
+assets/raw/*.mp3
+assets/raw/*.wav
+assets/rendered/*.mp4
+assets/rendered/*.mov
+
+# Keep folder structure via .gitkeep
+!assets/raw/.gitkeep
+!assets/rendered/.gitkeep
+!data/.gitkeep
+
+# ── Docker ─────────────────────────────────────────────────────────────────────
+*.override.yml
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Archives & Binaries ────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+1
+NEUROFLUX/
+NEUROFLUX.zip
